@@ -1,0 +1,22 @@
+panel,connection_id,from,to,scientific_meaning,source_file,line_support
+a,native_integration,Prepared drivers/states,Native OSCAR Model,Regional states and exchanges registered as LandStep; no separate climate time loop,oscar/_core/_model/_modules/regional_forest_age_reference.py,415–503
+b,annual_coordinates,Current time and birth coordinate,Forest cohort age,Annual birth coordinates are physical midyears; A/W/F retained by cohort,oscar/_core/_model/_modules/regional_forest_age.py,20–22;35–113
+b,primary_state,Primary forest,Unaged A/W/F states,Primary does not receive cohort age multipliers,oscar/_core/_model/_modules/regional_forest_age.py,530–540
+b,new_birth,Nonforest establishment or primary harvest,Current birth slot,Creation uses actual event time; transferred stocks follow event semantics,oscar/_core/_model/_modules/regional_forest_age.py,398–434
+b,standing_harvest,Standing secondary harvest,Original birth slot,Area returned to selected original slots after carbon removal; no birth reset,oscar/_core/_model/_modules/land_geometry.py,117–124
+b,standing_state_update,Selected forest area and live carbon,Retained forest area; carbon transfers,New area returns to same source slots; W/F removed to native pools,oscar/_core/_model/_modules/regional_forest_age.py,408–434
+c,native_environment,"D_CO2,D_Tl,r_Pl",Unit-area production and environmental losses,Native production and loss responses evaluated separately from age multipliers,oscar/_core/_model/_modules/regional_forest_age_reference.py,71–103;381–411
+c,fixed_calibration,Modern fixed calibration,W/F production allocation,rf_alpha_cal fixed; actual production responds to current environment,oscar/_core/_model/_modules/regional_forest_age_reference.py,36–58
+c,production_factors,Region curve and member lambda_w_cal,"gW(age),gF(age)",gW=S+Sprime/lambda_w_cal; gF=1-exp(-age/2) in formal default,oscar/_core/_model/_modules/land_carbon.py,21–68
+c,cohort_production,Native W/F production × cohort area × g,Actual cohort W/F production,Actual code multiplies rates.production by area and factors,oscar/_core/_model/_modules/regional_forest_age.py,519–552
+c,mortality,Actual W/F stocks,CWD/soil,W mortality to CWD; F mortality to soil,oscar/_core/_model/_modules/regional_forest_age.py,517–552
+c,event_carbon_routing,Selected W/F,"HWP,CWD,soil",Harvest/conversion W enters HWP and CWD; F enters soil; no immediate all-carbon emission,oscar/_core/_model/_modules/regional_forest_age.py,408–415
+c,dead_product_decay,"CWD,soil,HWP",Soil transfer and atmospheric losses,Biome pools and product boxes decay; these are not birth-resolved states,oscar/_core/_model/_modules/dead_carbon.py,116–146
+d,all_land_net,All-land NPP and actual atmospheric losses,Native net uptake,"Includes native forest/nonforest production, fire, crop/grazing and dead/product losses",oscar/_core/_model/_modules/regional_forest_age.py,553–587
+d,bookkeeping_reference,Unit-area dynamic biome reference and actual landscape,D_Fland and D_Eluc,"Reference is density bookkeeping, never a second actual land inventory",oscar/_core/_model/_modules/regional_forest_age_reference.py,381–411
+d,net_exchange_interface,D_Fland-D_Eluc,Actual net-uptake anomaly,"Exact interface equals actual net uptake minus declared PI baseline; all native land, excludes permafrost",oscar/_core/_model/_modules/regional_forest_age_native.py,221–250
+d,co2_budget,"D_Eff,D_Eluc,D_Foxi_CH4,D_Fsink_CO2,D_Emiss_CO2",Atmospheric CO2 tendency,D_Fsink_CO2 includes ocean and land minus permafrost release,oscar/_core/_model/_modules/OSCAR_CO2.py,37–68
+d,fire_chemistry,Actual fire exchange,Native biomass-burning species,Fire module receives actual D_Efire; species feed native chemistry/radiation,oscar/_core/_model/_modules/OSCAR_fire.py,74–155
+d,total_erf,Native forcing components,Effective radiative forcing,"Includes well-mixed gases, ozone, aerosols, land albedo and other components",oscar/_core/_model/_modules/OSCAR_ERF.py,26–52
+d,two_box,Effective forcing and surface/deep states,Temperature response,Coupled surface/deep-ocean model; native precipitation and regional climate diagnostics,oscar/_core/_model/_modules/OSCAR_clim.py,43–62;110–154
+c,off_reference,age_production=None,gW=gF=1; unchanged age/state evolution,Default factors are ones; setting production off is not FrozenAgeClock,oscar/_core/_model/_modules/regional_forest_age_native.py,201–220

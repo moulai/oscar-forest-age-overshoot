@@ -1,0 +1,140 @@
+{
+  "figure": "ED1 native regional annual-cohort architecture",
+  "recorded_utc": "2026-11-07T20:40:28.098040+00:00",
+  "source_type": "Implementation sources for the native forest-cohort architecture",
+  "files": [
+    {
+      "path": "oscar/_core/_model/_modules/regional_forest_age.py",
+      "line_ranges": [
+        [
+          1,
+          113
+        ],
+        [
+          398,
+          444
+        ],
+        [
+          498,
+          588
+        ]
+      ],
+      "bytes": 34063
+    },
+    {
+      "path": "oscar/_core/_model/_modules/land_geometry.py",
+      "line_ranges": [
+        [
+          117,
+          124
+        ]
+      ],
+      "bytes": 34597
+    },
+    {
+      "path": "oscar/_core/_model/_modules/regional_forest_age_native.py",
+      "line_ranges": [
+        [
+          1,
+          30
+        ],
+        [
+          201,
+          250
+        ],
+        [
+          265,
+          326
+        ]
+      ],
+      "bytes": 21353
+    },
+    {
+      "path": "oscar/_core/_model/_modules/regional_forest_age_reference.py",
+      "line_ranges": [
+        [
+          1,
+          58
+        ],
+        [
+          71,
+          103
+        ],
+        [
+          381,
+          411
+        ],
+        [
+          415,
+          503
+        ]
+      ],
+      "bytes": 29596
+    },
+    {
+      "path": "oscar/_core/_model/_modules/land_carbon.py",
+      "line_ranges": [
+        [
+          21,
+          68
+        ]
+      ],
+      "bytes": 10922
+    },
+    {
+      "path": "oscar/_core/_model/_modules/dead_carbon.py",
+      "line_ranges": [
+        [
+          116,
+          146
+        ]
+      ],
+      "bytes": 6511
+    },
+    {
+      "path": "oscar/_core/_model/_modules/OSCAR_CO2.py",
+      "line_ranges": [
+        [
+          37,
+          68
+        ]
+      ],
+      "bytes": 3605
+    },
+    {
+      "path": "oscar/_core/_model/_modules/OSCAR_fire.py",
+      "line_ranges": [
+        [
+          74,
+          155
+        ]
+      ],
+      "bytes": 14326
+    },
+    {
+      "path": "oscar/_core/_model/_modules/OSCAR_ERF.py",
+      "line_ranges": [
+        [
+          26,
+          52
+        ]
+      ],
+      "bytes": 2044
+    },
+    {
+      "path": "oscar/_core/_model/_modules/OSCAR_clim.py",
+      "line_ranges": [
+        [
+          43,
+          62
+        ],
+        [
+          110,
+          154
+        ]
+      ],
+      "bytes": 4444
+    }
+  ],
+  "scientific_scope": "Native model architecture; experiment-specific prescriptions still determine which climate variables are prognostic"
+}

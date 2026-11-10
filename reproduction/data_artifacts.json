@@ -1,0 +1,22 @@
+{
+  "schema": "public-study-data-assets-v1",
+  "release": "v1.0.0",
+  "artifacts": [
+    {
+      "artifact": "prepared_inputs.tar.gz",
+      "file_count": 177,
+      "uncompressed_bytes": 317160299,
+      "archive_bytes": 264506180,
+      "archive_sha256": "24b6e08be8761d0a51e84f07ee595a60642540eaedb7d51ba32de250cf4f4150",
+      "url": "https://github.com/moulai/oscar-forest-age-overshoot/releases/download/v1.0.0/prepared_inputs.tar.gz"
+    },
+    {
+      "artifact": "paper_source_data.tar.gz",
+      "file_count": 122,
+      "uncompressed_bytes": 267485515,
+      "archive_bytes": 227371771,
+      "archive_sha256": "946b485f0a0f5eb788c84a29449770058ce474c0c977acc275dab9caaa862cd3",
+      "url": "https://github.com/moulai/oscar-forest-age-overshoot/releases/download/v1.0.0/paper_source_data.tar.gz"
+    }
+  ]
+}

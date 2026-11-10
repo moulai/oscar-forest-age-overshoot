@@ -1,0 +1,65 @@
+{
+  "schema": "robinson-k-error-input-v1",
+  "status": "complete",
+  "record_url": "https://zenodo.org/records/15090826",
+  "api_url": "https://zenodo.org/api/records/15090826",
+  "doi": "10.5281/zenodo.15090826",
+  "version": "1",
+  "publication_date": "2025-03-26",
+  "licence": {
+    "id": "cc-by-4.0"
+  },
+  "error_definition": "Marginal NLS parameter standard error, not joint curve uncertainty or an NPP uncertainty interval.",
+  "shape_convention": {
+    "m": "2/3",
+    "q": 3,
+    "source": "Study convention, following the paper and the authors' v1.0 fitting script."
+  },
+  "files": {
+    "cr_a.tif": {
+      "path": "inputs/raw/Robinson2025_v1/cr_a.tif",
+      "provider_url": "https://zenodo.org/api/records/15090826/files/cr_a.tif/content",
+      "size_bytes": 428474902,
+      "provider_checksum": "md5:1e0c7d4199c426f46a7eb3c1f7b83409",
+      "verified_md5": "1e0c7d4199c426f46a7eb3c1f7b83409",
+      "acquired_utc": "2026-11-07T22:30:07.100184+00:00"
+    },
+    "cr_b.tif": {
+      "path": "inputs/raw/Robinson2025_v1/cr_b.tif",
+      "provider_url": "https://zenodo.org/api/records/15090826/files/cr_b.tif/content",
+      "size_bytes": 906953483,
+      "provider_checksum": "md5:9abeedd744ea059ae8cacff9b52adc96",
+      "verified_md5": "9abeedd744ea059ae8cacff9b52adc96",
+      "acquired_utc": "2026-11-07T22:30:14.578755+00:00"
+    },
+    "cr_k.tif": {
+      "path": "inputs/raw/Robinson2025_v1/cr_k.tif",
+      "provider_url": "https://zenodo.org/api/records/15090826/files/cr_k.tif/content",
+      "size_bytes": 678967405,
+      "provider_checksum": "md5:dcf911fb7843ee5989533054edbea5c0",
+      "verified_md5": "dcf911fb7843ee5989533054edbea5c0",
+      "acquired_utc": "2026-11-07T22:30:19.164820+00:00"
+    },
+    "cr_k_error.tif": {
+      "path": "inputs/raw/Robinson2025_v1/cr_k_error.tif",
+      "provider_url": "https://zenodo.org/api/records/15090826/files/cr_k_error.tif/content",
+      "size_bytes": 927251513,
+      "provider_checksum": "md5:c70a103d30edd5f2ae9f008e07ea894d",
+      "verified_md5": "c70a103d30edd5f2ae9f008e07ea894d",
+      "acquired_utc": "2026-11-07T22:41:29.503415+00:00"
+    },
+    "ReadMe.md": {
+      "path": "inputs/raw/Robinson2025_v1/ReadMe.md",
+      "provider_url": "https://zenodo.org/api/records/15090826/files/ReadMe.md/content",
+      "size_bytes": 4395,
+      "provider_checksum": "md5:629cce9a445dc0c81135b889a310d070",
+      "verified_md5": "629cce9a445dc0c81135b889a310d070",
+      "acquired_utc": "2026-11-07T22:41:30.243779+00:00"
+    }
+  },
+  "forest_support": {
+    "path": "inputs/robinson_k_error_support/forest850_region_weights.nc",
+    "size_bytes": 1380636,
+    "interpretation": "Unchanged original LUH850 forest areas, spherical subdivisions and native regional fractions; runtime reduction reads only this project-local copy."
+  }
+}

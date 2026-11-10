@@ -1,0 +1,97 @@
+{
+  "schema": "paper-assets-v1",
+  "main_count": 4,
+  "extended_data_count": 5,
+  "figures": [
+    {
+      "figure": "Figure 1",
+      "package": "outputs/age_module/main_figure_redesign/figures/fig01",
+      "caption": "outputs/age_module/main_figure_redesign/figures/fig01/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/fig01/source_data",
+      "workflow": "workflows/plot_main_figures_phenomenon_carbon.py",
+      "analysis": "outputs/age_module/main_figure_redesign/analysis/core",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "Figure 2",
+      "package": "outputs/age_module/main_figure_redesign/figures/fig02",
+      "caption": "outputs/age_module/main_figure_redesign/figures/fig02/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/fig02/source_data",
+      "workflow": "workflows/plot_main_figures_phenomenon_carbon.py",
+      "analysis": "outputs/age_module/main_figure_redesign/analysis/core + outputs/age_module/main_figure_redesign/analysis/age_mechanism",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "Figure 3",
+      "package": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism",
+      "caption": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data",
+      "workflow": "workflows/plot_age_establishment_landscape.py",
+      "analysis": "outputs/age_module/main_figure_redesign/analysis/age_mechanism + idealized + birth-source bridge",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "Figure 4",
+      "package": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate",
+      "caption": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/caption.md",
+      "source_data": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data",
+      "workflow": "workflows/plot_land_supply_limited_young_retention.py",
+      "analysis": "outputs/age_module/land_supply_limited_young_retention/analysis",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "ED1",
+      "package": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture",
+      "caption": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data",
+      "workflow": "workflows/plot_extended_model_architecture.py",
+      "analysis": "Architecture source connections",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "ED2",
+      "package": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations",
+      "caption": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data",
+      "workflow": "workflows/plot_ed02_forest_observations.py",
+      "analysis": "outputs/age_module/main_figure_redesign/analysis/ed02_forest_observations",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "ED3",
+      "package": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response",
+      "caption": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data",
+      "workflow": "workflows/plot_extended_history_age_response.py",
+      "analysis": "Historical paired Source Data",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "ED4",
+      "package": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate",
+      "caption": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data",
+      "workflow": "workflows/plot_extended_all_pathway_climate.py",
+      "analysis": "outputs/age_module/main_figure_redesign/analysis/core",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    },
+    {
+      "figure": "ED5",
+      "package": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response",
+      "caption": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/caption.md",
+      "source_data": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data",
+      "workflow": "workflows/plot_extended_birth_source_response.py",
+      "analysis": "outputs/age_module/birth_source_age_response/analysis",
+      "scientific_source_status": "completed_original_members",
+      "recipe": "paper-figures"
+    }
+  ]
+}

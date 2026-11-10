@@ -1,0 +1,65 @@
+{
+  "schema": "study-input-catalogue-v1",
+  "original_ensemble": "inputs/ensemble/OSCARv4_Par_RCMIP3.nc",
+  "member_order": "inputs/ensemble/ordered_members.csv",
+  "prepared_artifacts": [
+    {
+      "path": "data/processed/regional_forest_age_inputs_v1",
+      "role": "Canonical spin-up/prehistory/history layout, calibration and forcing",
+      "manifest": "data/processed/regional_forest_age_inputs_v1/manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "data/processed/regional_secondary_harvest_carbon_v1",
+      "role": "Canonical secondary gross-carbon requests",
+      "manifest": "data/processed/regional_secondary_harvest_carbon_v1/manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "outputs/01_prepared_data/cmip7_n2o_mass_corrected_v1",
+      "role": "Historical and five matched CMIP7 forcings, requests and N2O accounting correction",
+      "manifest": "outputs/01_prepared_data/cmip7_n2o_mass_corrected_v1/manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "outputs/01_prepared_data/cmip7_n2o_mass_corrected_H0_v1",
+      "role": "H0-bound continuation inputs",
+      "manifest": "outputs/01_prepared_data/cmip7_n2o_mass_corrected_H0_v1/manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1",
+      "role": "Original ensemble and input/observation provenance",
+      "manifest": "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1/bundle_manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "outputs/01_prepared_data/secondary_candidate_inputs_v1/secondary_candidate_inputs_v1",
+      "role": "Secondary-carbon add-on, FRA2025 tables and provenance",
+      "manifest": "outputs/01_prepared_data/secondary_candidate_inputs_v1/secondary_candidate_inputs_v1/bundle_manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    },
+    {
+      "path": "outputs/01_prepared_data/robinson_conditional_k_v1",
+      "role": "Fixed-support central and k\u00b1reported-SE regional curves",
+      "manifest": "outputs/01_prepared_data/robinson_conditional_k_v1/manifest.json",
+      "large_data_distribution": "prepared_inputs.tar.gz release asset"
+    }
+  ],
+  "provider_source_manifests": [
+    "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1/manifests/future_input_sources_v1.json",
+    "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1/manifests/future_land_sources_v1.json",
+    "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1/manifests/raw_background_sources.json",
+    "outputs/01_prepared_data/native_inputs_v1/native_inputs_v1/manifests/raw_luh3_sources.json",
+    "outputs/01_prepared_data/secondary_candidate_inputs_v1/secondary_candidate_inputs_v1/manifests/future_land_sources_v1.json",
+    "outputs/01_prepared_data/secondary_candidate_inputs_v1/secondary_candidate_inputs_v1/manifests/raw_luh3_sources.json"
+  ],
+  "raw_data_policy": "Provider terms, versions and URLs remain in the original manifests. No raw download or input rebuilding is performed by this catalogue.",
+  "public_archive_status": "GitHub release data assets",
+  "upstream_bootstrap_resources": {
+    "path": "oscar_origin/oscar",
+    "role": "Unchanged upstream region mask and bootstrap resource files; included in prepared-input artifact, excluded from Git",
+    "file_count": 6
+  },
+  "public_archive_url": "https://github.com/moulai/oscar-forest-age-overshoot/releases/tag/v1.0.0"
+}

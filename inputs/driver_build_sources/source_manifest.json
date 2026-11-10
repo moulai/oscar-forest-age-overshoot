@@ -1,0 +1,60 @@
+{
+  "schema": "original-driver-local-source-copy-v1",
+  "files": [
+    {
+      "copy": "inputs/driver_build_sources/data/raw/future/cmip7_preflight_v1/oscar_v4_beta2_1/forcing_hist.nc",
+      "bytes": 7527986
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/h/land_use_absolute.nc",
+      "bytes": 2869288
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/h/report.json",
+      "original_source_bytes": 89103,
+      "bytes": 88941,
+      "sha256": "112fab2e45706632fbb6adc209e2df424a3a97be4a904b6e302d9657f8e7ea45"
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/m/land_use_absolute.nc",
+      "bytes": 2682456
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/m/report.json",
+      "original_source_bytes": 88817,
+      "bytes": 88655,
+      "sha256": "a13cbe91f98af5302a354b83008d708079f7cbd26b31c06949d419f271a5135a"
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/vl/land_use_absolute.nc",
+      "bytes": 2835715
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_v3/vl/report.json",
+      "original_source_bytes": 88867,
+      "bytes": 88705,
+      "sha256": "eeae0ece151aa1373c7055c2d20f823833c5298a25e5c815bcdcd0e6037cd507"
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_completion_v1/hl/land_use_absolute.nc",
+      "bytes": 2407582
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_completion_v1/hl/report.json",
+      "original_source_bytes": 88734,
+      "bytes": 88572,
+      "sha256": "39d8adfa38a9cd95172dd615a4fa98d3df6a09caf3aa0fb422e01f6925338bc8"
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_completion_v1/ln/land_use_absolute.nc",
+      "bytes": 2624504
+    },
+    {
+      "copy": "inputs/driver_build_sources/data/processed/land_use/future_luh3_r10_completion_v1/ln/report.json",
+      "original_source_bytes": 88791,
+      "bytes": 88629,
+      "sha256": "9a7189a8326ffcab0e29059fe91defd8e2486e6edc49710d697df2fe5f0f54c2"
+    }
+  ],
+  "scope": "Reduced LUH3 regional inputs for five pathways and the historical atmospheric baseline used to construct original-OSCAR drivers"
+}

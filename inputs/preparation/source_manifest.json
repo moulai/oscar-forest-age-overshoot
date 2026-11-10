@@ -1,0 +1,111 @@
+{
+  "schema": "targeted-preparation-source-copy-v1",
+  "sources": [
+    {
+      "copy": "inputs/preparation/source_used/prepare_gami_cci_observations.py",
+      "active_workflow": "workflows/prepare_gami_cci_observations.py",
+      "original_source_bytes": 33833,
+      "bytes": 33833,
+      "sha256": "b6591443ca322ec02f8c46c58992a8ab75fa3c1f7d3d54fe20cfd310203597b5"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_fra2025_inventory.py",
+      "active_workflow": "workflows/prepare_fra2025_inventory.py",
+      "original_source_bytes": 13951,
+      "bytes": 13951,
+      "sha256": "b6629dc39aa456c44f56c32876fa484e3e83050a61bf8dcdcf723c37715b1a36"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_reference_background.py",
+      "active_workflow": "workflows/prepare_reference_background.py",
+      "original_source_bytes": 20395,
+      "bytes": 20400,
+      "sha256": "f6b0d8143804821c473f4336a8112af8dce61ded7b0b4613798dd21801f35ac4"
+    },
+    {
+      "copy": "inputs/preparation/source_used/cmip7_n2o_mass_basis.py",
+      "active_workflow": "workflows/cmip7_n2o_mass_basis.py",
+      "original_source_bytes": 5361,
+      "bytes": 5361,
+      "sha256": "06a43b6ec89e1a8cfd37ced210c6ea11f81d375de9e817a84433f2495ec467ef"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_growth_reference.py",
+      "active_workflow": "workflows/prepare_growth_reference.py",
+      "original_source_bytes": 17686,
+      "bytes": 17676,
+      "sha256": "ccb4d67cb42f74e22c7cff362089c31e90d86097fbdaba07416d98f8a1e9acc7"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_regional_curve_nodes.py",
+      "active_workflow": "workflows/prepare_regional_curve_nodes.py",
+      "original_source_bytes": 3594,
+      "bytes": 3620,
+      "sha256": "47f3e9e9b948b6aa9500e2a77bdead68e0c322377b1a983501da7e2bcc4efca1"
+    },
+    {
+      "copy": "inputs/preparation/source_used/build_regional_hermite_curves.py",
+      "active_workflow": "workflows/build_regional_hermite_curves.py",
+      "original_source_bytes": 8787,
+      "bytes": 8787,
+      "sha256": "32ca7096bec67fc6d2ad7d9992563c2f89b1a950c20718e8a2141a27c6571c1a"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_secondary_harvest_carbon_future.py",
+      "active_workflow": "workflows/prepare_secondary_harvest_carbon_future.py",
+      "original_source_bytes": 17270,
+      "bytes": 17191,
+      "sha256": "8c6580835eb69ef6a7ff9a8b2705968a0432ee76839fdc1acf8811e1edbd39b8"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_secondary_harvest_carbon.py",
+      "active_workflow": "workflows/prepare_secondary_harvest_carbon.py",
+      "original_source_bytes": 10939,
+      "bytes": 10948,
+      "sha256": "0d3e1b4d6c817bf9bd4ae75e9d70c69dbd5d183f120ea959bbedba2daa1a228c"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_regional_forest_age_inputs.py",
+      "active_workflow": "workflows/prepare_regional_forest_age_inputs.py",
+      "original_source_bytes": 16114,
+      "bytes": 16025,
+      "sha256": "24b727a8a5902228161274d3d76599cd211cfffa04a5992b6a37ab2e374d928d"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_future_land_use.py",
+      "active_workflow": "workflows/prepare_future_land_use.py",
+      "original_source_bytes": 23150,
+      "bytes": 23131,
+      "sha256": "96d504a5bde0fbf505da02ae230a6621c14236ec43d03b3f72d906ece68ff05b"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_land_use.py",
+      "active_workflow": "workflows/prepare_land_use.py",
+      "original_source_bytes": 16353,
+      "bytes": 16342,
+      "sha256": "3904d18cce2b727bbab572345a2ee6b5756140e0f9c6f91aefed98f9c9b70e77"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_future_history_binding.py",
+      "active_workflow": "workflows/prepare_future_history_binding.py",
+      "original_source_bytes": 5684,
+      "bytes": 5684,
+      "sha256": "480dee76a097277f0a6a3232d9034eb64ac6b12cbf32a711d607856559aef840"
+    },
+    {
+      "copy": "inputs/preparation/source_used/prepare_n2o_mass_corrected_inputs.py",
+      "active_workflow": "workflows/prepare_n2o_mass_corrected_inputs.py",
+      "original_source_bytes": 12031,
+      "bytes": 12031,
+      "sha256": "02843ecdaf479c9dfb58b5738fd04d69163f4709f4e397d9a1ff7483a049d2f4"
+    },
+    {
+      "copy": "inputs/preparation/source_used/reduce_cmip7_emissions_extension.py",
+      "active_workflow": "workflows/reduce_cmip7_emissions_extension.py",
+      "original_source_bytes": 11979,
+      "bytes": 11979,
+      "sha256": "ef82c52cafddd050f6317849ff8b1e3ec956c16dd7b45ab9cf12c31dd766e1cf"
+    }
+  ],
+  "scope": "Input-preparation routines and their direct workflow imports"
+}

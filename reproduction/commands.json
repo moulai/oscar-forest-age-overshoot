@@ -1,0 +1,824 @@
+{
+  "schema": "oscar-forest-age-explicit-reproduction-v1",
+  "recipes": {
+    "paper-figures": {
+      "description": "Regenerate the 4 main + 5 ED figures; no model runs",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_main_figures_phenomenon_carbon.py",
+            "--analysis-dir",
+            "outputs/age_module/main_figure_redesign/analysis/core",
+            "--figures",
+            "fig01",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/fig01/caption.md",
+            "--output",
+            "{output}/figures"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_main_figures_phenomenon_carbon.py",
+            "--analysis-dir",
+            "outputs/age_module/main_figure_redesign/analysis/core",
+            "--figures",
+            "fig02",
+            "--age-stages",
+            "outputs/age_module/main_figure_redesign/figures/fig02/source_data/actual_age_stages_all500.nc",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/fig02/caption.md",
+            "--output",
+            "{output}/figures"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_age_establishment_landscape.py",
+            "--source-bundle",
+            "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism",
+            "--output",
+            "{output}/figures/fig03"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_land_supply_limited_young_retention.py",
+            "--source-bundle",
+            "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data",
+            "--caption-file",
+            "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/caption.md",
+            "--output",
+            "{output}/figures/fig04"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_model_architecture.py",
+            "--source-bundle",
+            "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/caption.md",
+            "--output",
+            "{output}/figures/ed01"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_ed02_forest_observations.py",
+            "--analysis-dir",
+            "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data",
+            "--output",
+            "{output}/figures/ed02"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_history_age_response.py",
+            "--analysis-dir",
+            "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data",
+            "--output",
+            "{output}/figures/ed03"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_all_pathway_climate.py",
+            "--source-bundle",
+            "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/caption.md",
+            "--output",
+            "{output}/figures/ed04"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_birth_source_response.py",
+            "--source-dir",
+            "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data",
+            "--output",
+            "{output}/figures/ed05"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/main_figure_redesign/analysis/core",
+        "outputs/age_module/main_figure_redesign/figures/fig02/source_data/actual_age_stages_all500.nc",
+        "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data",
+        "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data",
+        "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data",
+        "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data",
+        "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data",
+        "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data",
+        "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data"
+      ]
+    },
+    "matched-future-analysis": {
+      "description": "Rebuild the five-pathway paired annual thin source",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_future_age_response.py",
+            "--plan",
+            "outputs/age_module/future_age_response/PLAN.json",
+            "--output",
+            "{output}/analysis/matched_futures"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/future_age_response/PLAN.json",
+        "outputs/age_module/historical_emissions/H1/annual_summary.nc"
+      ]
+    },
+    "birth-source-analysis": {
+      "description": "Rebuild the fixed VL/LN four-arm source analysis",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_birth_source_age_response.py",
+            "--plan",
+            "outputs/age_module/birth_source_age_response/PLAN.json",
+            "--output",
+            "{output}/analysis/birth_source"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/birth_source_age_response/PLAN.json"
+      ]
+    },
+    "paper-analyses": {
+      "description": "Rebuild the paper analyses from canonical completed sources",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_idealized_age_mechanism.py",
+            "--source-dir",
+            "outputs/age_module/main_figure_redesign/idealized",
+            "--output",
+            "outputs/age_module/main_figure_redesign/idealized/analysis"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_main_figure_core.py",
+            "--source",
+            "outputs/age_module/future_age_response/analysis/source_annual_paired_all500.nc",
+            "--output",
+            "{output}/analysis/core"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_actual_age_stages.py",
+            "--core-analysis",
+            "{output}/analysis/core",
+            "--output",
+            "{output}/analysis/age_mechanism"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_age_production_net_bridge.py",
+            "--birth-source",
+            "outputs/age_module/birth_source_age_response/analysis/source_annual_four_arms_all500.nc",
+            "--core-analysis",
+            "{output}/analysis/core",
+            "--detailed-age-source",
+            "{output}/analysis/age_mechanism/actual_age_annual_global_all500.nc",
+            "--output",
+            "{output}/analysis/age_production_net_bridge"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_production_to_net_bridge.py",
+            "--output",
+            "{output}/analysis/production_to_net_bridge"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_land_supply_limited_young_retention.py",
+            "--plan",
+            "outputs/age_module/land_supply_limited_young_retention/PLAN.json",
+            "--baseline-source",
+            "outputs/age_module/birth_source_age_response/analysis/source_annual_four_arms_all500.nc",
+            "--output",
+            "{output}/analysis/retention"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_ed02_forest_observations.py",
+            "--output",
+            "{output}/analysis/ed02"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/analyze_extended_history_age_response.py",
+            "--output",
+            "{output}/analysis/ed03",
+            "--refresh-source"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/prepare_birth_source_figure_data.py",
+            "--analysis-dir",
+            "outputs/age_module/birth_source_age_response/analysis",
+            "--output",
+            "{output}/analysis/ed05"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/future_age_response/analysis/source_annual_paired_all500.nc",
+        "outputs/age_module/birth_source_age_response/analysis/source_annual_four_arms_all500.nc",
+        "outputs/age_module/land_supply_limited_young_retention/PLAN.json",
+        "outputs/age_module/historical_emissions/H1/annual_summary.nc"
+      ]
+    },
+    "model-spinup": {
+      "description": "Dynamic primary-forest spin-up, all original members",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age.py",
+            "--phase",
+            "spinup",
+            "--inputs",
+            "data/processed/regional_forest_age_inputs_v1",
+            "--output",
+            "outputs/age_module/spinup",
+            "--age-production",
+            "off",
+            "--tau-years",
+            "0",
+            "--nt",
+            "2"
+          ]
+        }
+      ],
+      "required_paths": [
+        "data/processed/regional_forest_age_inputs_v1/manifest.json",
+        "data/processed/regional_forest_age_inputs_v1/primary_parameters.nc"
+      ]
+    },
+    "model-histories": {
+      "description": "Four H0/H1 concentration/emissions histories",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_batches.py",
+            "--inputs",
+            "data/processed/regional_forest_age_inputs_v1",
+            "--spinup-directory",
+            "outputs/age_module/spinup",
+            "--output",
+            "outputs/age_module/historical_concentration/H0",
+            "--age-production",
+            "off",
+            "--tau-years",
+            "2",
+            "--nt",
+            "2",
+            "--history-policy",
+            "area_proportional",
+            "--harvest-contract",
+            "secondary_gross_agb_request_proportional",
+            "--secondary-carbon-inputs",
+            "data/processed/regional_secondary_harvest_carbon_v1",
+            "--batch-size",
+            "5",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_batches.py",
+            "--inputs",
+            "data/processed/regional_forest_age_inputs_v1",
+            "--spinup-directory",
+            "outputs/age_module/spinup",
+            "--output",
+            "outputs/age_module/historical_concentration/H1",
+            "--age-production",
+            "on",
+            "--tau-years",
+            "2",
+            "--nt",
+            "2",
+            "--history-policy",
+            "area_proportional",
+            "--harvest-contract",
+            "secondary_gross_agb_request_proportional",
+            "--secondary-carbon-inputs",
+            "data/processed/regional_secondary_harvest_carbon_v1",
+            "--batch-size",
+            "1",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_batches.py",
+            "--inputs",
+            "data/processed/regional_forest_age_inputs_v1",
+            "--spinup-directory",
+            "outputs/age_module/spinup",
+            "--output",
+            "outputs/age_module/historical_emissions/H0",
+            "--age-production",
+            "off",
+            "--tau-years",
+            "2",
+            "--nt",
+            "2",
+            "--history-policy",
+            "area_proportional",
+            "--harvest-contract",
+            "secondary_gross_agb_request_proportional",
+            "--secondary-carbon-inputs",
+            "data/processed/regional_secondary_harvest_carbon_v1",
+            "--batch-size",
+            "5",
+            "--jobs",
+            "50",
+            "--emissions-driven"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_batches.py",
+            "--inputs",
+            "data/processed/regional_forest_age_inputs_v1",
+            "--spinup-directory",
+            "outputs/age_module/spinup",
+            "--output",
+            "outputs/age_module/historical_emissions/H1",
+            "--age-production",
+            "on",
+            "--tau-years",
+            "2",
+            "--nt",
+            "2",
+            "--history-policy",
+            "area_proportional",
+            "--harvest-contract",
+            "secondary_gross_agb_request_proportional",
+            "--secondary-carbon-inputs",
+            "data/processed/regional_secondary_harvest_carbon_v1",
+            "--batch-size",
+            "1",
+            "--jobs",
+            "50",
+            "--emissions-driven"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/spinup/final_state.nc",
+        "data/processed/regional_secondary_harvest_carbon_v1/historical_requests.nc"
+      ]
+    },
+    "model-matched-off": {
+      "description": "Prepare/run five common-H1-2022 future-production-off arms",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_future_age_response.py",
+            "--prepare"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_future_age_response.py",
+            "--run",
+            "--jobs",
+            "250"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/historical_emissions/H1/final_state.nc",
+        "outputs/age_module/future_emissions/H/H1/report.json",
+        "outputs/age_module/future_emissions/HL/H1/report.json",
+        "outputs/age_module/future_emissions/M/H1/report.json",
+        "outputs/age_module/future_emissions/VL/H1/report.json",
+        "outputs/age_module/future_emissions/LN/H1/report.json"
+      ]
+    },
+    "model-birth-source": {
+      "description": "Prepare/run four source-selective VL/LN configurations",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_birth_source_age_response.py",
+            "--prepare"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_birth_source_age_response.py",
+            "--run",
+            "--jobs",
+            "200"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/future_age_response/PLAN.json"
+      ]
+    },
+    "model-detailed-process": {
+      "description": "Record detailed age-process diagnostics for the five age-on futures",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_main_age_diagnostics.py",
+            "--prepare"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_main_age_diagnostics.py",
+            "--run",
+            "--jobs",
+            "250"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/future_age_response/PLAN.json"
+      ]
+    },
+    "model-idealized": {
+      "description": "Four one-hectare local cases in all regions; no global climate scenario",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_idealized_age_mechanism.py",
+            "--output",
+            "outputs/age_module/main_figure_redesign/idealized",
+            "--jobs",
+            "8",
+            "--batch",
+            "20"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/historical_emissions/H1/parameters.nc",
+        "outputs/age_module/historical_emissions/H1/final_state.nc"
+      ]
+    },
+    "model-retention": {
+      "description": "Prepare/run eight explicitly land-supply-limited protection configurations",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_land_supply_limited_young_retention.py",
+            "--prepare"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_land_supply_limited_young_retention.py",
+            "--run",
+            "--jobs",
+            "400"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/age_module/future_age_response/PLAN.json"
+      ]
+    },
+    "model-matched-on": {
+      "description": "Five complete matched CMIP7 H1 emissions-driven futures",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_future.py",
+            "--scenario",
+            "H",
+            "--arm",
+            "H1",
+            "--atmosphere",
+            "emissions",
+            "--batch-size",
+            "10",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_future.py",
+            "--scenario",
+            "HL",
+            "--arm",
+            "H1",
+            "--atmosphere",
+            "emissions",
+            "--batch-size",
+            "10",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_future.py",
+            "--scenario",
+            "M",
+            "--arm",
+            "H1",
+            "--atmosphere",
+            "emissions",
+            "--batch-size",
+            "10",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_future.py",
+            "--scenario",
+            "VL",
+            "--arm",
+            "H1",
+            "--atmosphere",
+            "emissions",
+            "--batch-size",
+            "10",
+            "--jobs",
+            "50"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_regional_forest_age_future.py",
+            "--scenario",
+            "LN",
+            "--arm",
+            "H1",
+            "--atmosphere",
+            "emissions",
+            "--batch-size",
+            "10",
+            "--jobs",
+            "50"
+          ]
+        }
+      ],
+      "required_paths": [
+        "outputs/01_prepared_data/cmip7_n2o_mass_corrected_H0_v1/manifest.json"
+      ]
+    },
+    "paper-figures-from-analysis": {
+      "description": "Render nine figures from the newly reconstructed paper-analyses outputs",
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_main_figures_phenomenon_carbon.py",
+            "--analysis-dir",
+            "{output}/analysis/core",
+            "--figures",
+            "fig01",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/fig01/caption.md",
+            "--output",
+            "{output}/figures"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_main_figures_phenomenon_carbon.py",
+            "--analysis-dir",
+            "{output}/analysis/core",
+            "--figures",
+            "fig02",
+            "--age-stages",
+            "{output}/analysis/age_mechanism/actual_age_stages_all500.nc",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/fig02/caption.md",
+            "--output",
+            "{output}/figures"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_age_establishment_landscape.py",
+            "--idealized-source",
+            "outputs/age_module/main_figure_redesign/idealized",
+            "--actual-source",
+            "{output}/analysis/age_mechanism",
+            "--bridge-source",
+            "{output}/analysis/age_production_net_bridge",
+            "--output",
+            "{output}/figures/fig03",
+            "--caption",
+            "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/caption.md"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_land_supply_limited_young_retention.py",
+            "--analysis-dir",
+            "{output}/analysis/retention",
+            "--caption-file",
+            "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/caption.md",
+            "--output",
+            "{output}/figures/fig04"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_model_architecture.py",
+            "--source-bundle",
+            "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/caption.md",
+            "--output",
+            "{output}/figures/ed01"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_ed02_forest_observations.py",
+            "--analysis-dir",
+            "{output}/analysis/ed02",
+            "--output",
+            "{output}/figures/ed02"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_history_age_response.py",
+            "--analysis-dir",
+            "{output}/analysis/ed03",
+            "--output",
+            "{output}/figures/ed03"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_all_pathway_climate.py",
+            "--analysis-dir",
+            "{output}/analysis/core",
+            "--caption-file",
+            "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/caption.md",
+            "--output",
+            "{output}/figures/ed04"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/plot_extended_birth_source_response.py",
+            "--source-dir",
+            "{output}/analysis/ed05",
+            "--output",
+            "{output}/figures/ed05"
+          ]
+        }
+      ],
+      "required_paths": [
+        "{output}/analysis/core/summary.json",
+        "{output}/analysis/age_mechanism/manifest.json",
+        "{output}/analysis/age_production_net_bridge/summary.json",
+        "{output}/analysis/retention/summary.json",
+        "{output}/analysis/ed02/summary.json",
+        "{output}/analysis/ed03/summary.json",
+        "{output}/analysis/ed05/source_analysis_summary.json"
+      ]
+    },
+    "model-establishment-f-response": {
+      "description": "Run two finite future-F-unmodulated conditions, reusing completed 00/10/11",
+      "required_paths": [
+        "outputs/age_module/birth_source_age_response/PLAN.json",
+        "outputs/age_module/birth_source_age_response/execution_manifest.json"
+      ],
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_response_sensitivity.py",
+            "--prepare"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_response_sensitivity.py",
+            "--interface-check"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_response_sensitivity.py",
+            "--run",
+            "--jobs",
+            "100"
+          ]
+        }
+      ]
+    },
+    "model-establishment-k-rate": {
+      "description": "Run four coherent future-cohort k plus/minus marginal-SE conditions, separate from F treatment",
+      "required_paths": [
+        "outputs/age_module/birth_source_age_response/PLAN.json",
+        "outputs/01_prepared_data/robinson_conditional_k_v1/manifest.json",
+        "outputs/01_prepared_data/robinson_conditional_k_v1/growth_curve_k_plus_se.nc",
+        "outputs/01_prepared_data/robinson_conditional_k_v1/growth_curve_k_minus_se.nc"
+      ],
+      "steps": [
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_rate_sensitivity.py",
+            "--prepare",
+            "--curve-plus-se",
+            "outputs/01_prepared_data/robinson_conditional_k_v1/growth_curve_k_plus_se.nc",
+            "--curve-minus-se",
+            "outputs/01_prepared_data/robinson_conditional_k_v1/growth_curve_k_minus_se.nc",
+            "--curve-provenance",
+            "outputs/01_prepared_data/robinson_conditional_k_v1/manifest.json"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_rate_sensitivity.py",
+            "--interface-check"
+          ]
+        },
+        {
+          "argv": [
+            "{python}",
+            "workflows/run_establishment_rate_sensitivity.py",
+            "--run",
+            "--jobs",
+            "200"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "robinson-k-error-input-v1",
+  "forest_support": {
+    "path": "inputs/robinson_k_error_support/forest850_region_weights.nc",
+    "size_bytes": 1380636,
+    "interpretation": "Unchanged original LUH850 forest areas, spherical subdivisions and native regional fractions; runtime reduction reads only this project-local copy."
+  },
+  "shape_convention": {
+    "m": "2/3",
+    "q": 3,
+    "source": "Study convention, following the paper and the authors' v1.0 fitting script."
+  },
+  "doi": "10.5281/zenodo.15090826",
+  "version": "1"
+}

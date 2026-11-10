@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "Please cite this software and the OSCAR and input-data publications identified in the documentation."
+type: software
+title: "Forest age and climate overshoot in OSCAR"
+version: 1.0.0
+abstract: "Scientific code release v1.0.0, based on OSCAR model v4-beta2, with native regional annual forest cohorts and age-dependent production."
+date-released: 2026-11-10
+url: "https://github.com/moulai/oscar-forest-age-overshoot"
+repository-code: "https://github.com/moulai/oscar-forest-age-overshoot"
+license: CECILL-2.1
+authors:
+  - family-names: Lai
+    given-names: Yuqin
+  - family-names: Fu
+    given-names: Bo
+  - family-names: Zhu
+    given-names: Biqing
+  - family-names: He
+    given-names: Yue
+  - family-names: Liu
+    given-names: Chenxi
+  - family-names: Chen
+    given-names: Guolong
+  - family-names: Jiang
+    given-names: Yongye
+  - family-names: Tian
+    given-names: Hongjin
+  - family-names: Gasser
+    given-names: Thomas
+  - family-names: Li
+    given-names: Bengang

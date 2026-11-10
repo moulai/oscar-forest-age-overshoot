@@ -1,0 +1,743 @@
+{
+  "schema": "public-data-artifact-v1",
+  "release": "v1.0.0",
+  "artifact": "paper_source_data.tar.gz",
+  "file_count": 122,
+  "uncompressed_bytes": 267485515,
+  "paths": [
+    "PAPER_SOURCE_DATA_MANIFEST.json",
+    "outputs/age_module/establishment_response_sensitivity/PLAN.json",
+    "outputs/age_module/establishment_response_sensitivity/analysis/analysis_source_used.py",
+    "outputs/age_module/establishment_response_sensitivity/analysis/arm_members_all500.csv",
+    "outputs/age_module/establishment_response_sensitivity/analysis/condition_sensitivity_summary.csv",
+    "outputs/age_module/establishment_response_sensitivity/analysis/member_establishment_contrasts_all500.csv",
+    "outputs/age_module/establishment_response_sensitivity/analysis/source_annual_establishment_all500.nc",
+    "outputs/age_module/establishment_response_sensitivity/analysis/summary.json",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/PLAN.json",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/analysis_source_used.py",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/arm_members_all500.csv",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/condition_rate_summary.csv",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/member_rate_contrasts_all500.csv",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/source_annual_rate_conditions_all500.nc",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/summary.json",
+    "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/source_masks.json",
+    "outputs/age_module/establishment_response_sensitivity/source_masks.json",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/caption.md",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/README.md",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/annual_age_area_contrast.csv.gz",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/condition_retention_summary.csv",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/member_retention_outcomes_all500.csv",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/return_state_transitions.csv",
+    "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/summary.json",
+    "outputs/age_module/main_figure_redesign/analysis/core/analysis_source_used.py",
+    "outputs/age_module/main_figure_redesign/analysis/core/annual_members_all500.csv.gz",
+    "outputs/age_module/main_figure_redesign/analysis/core/annual_summary.csv",
+    "outputs/age_module/main_figure_redesign/analysis/core/member_outcomes_all500.csv",
+    "outputs/age_module/main_figure_redesign/analysis/core/member_stage_carbon_all500.csv",
+    "outputs/age_module/main_figure_redesign/analysis/core/stage_summary.csv",
+    "outputs/age_module/main_figure_redesign/analysis/core/state_transitions.csv",
+    "outputs/age_module/main_figure_redesign/analysis/core/summary.json",
+    "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/architecture_connections.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/implementation_excerpts.md",
+    "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/source_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/fra2025_reported_2020_with_coverage.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_age_composition_all20.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_native_2020_reduced.nc",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_regional_members_all20.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/model_age_composition_all500.csv.gz",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/model_regional_members_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/regional_display_statistics.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/regional_map_geometry.nc",
+    "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/summary.json",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_2022_members_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_age_area_summaries.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_annual_summaries.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_selected_year_summaries.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_temperature_references_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_a_age_area_Gha.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_b_carbon_pool_differences.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_c_historical_net_uptake_path.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panels_c_d_2022_members_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/source_history_paired_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/summary.json",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/analysis_summary.json",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/annual_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/density_bin_shares.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/member_outcomes_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/state_transitions.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_analysis_summary.json",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_display_statistics.json",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_event_aligned_growth_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_four_arm_members_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_member_contrasts_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig01/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/analysis_summary.json",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/annual_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/density_bin_counts.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/member_outcomes_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/state_transitions.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig01/source_data/target_endpoint_pairs_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/actual_age_stages_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/analysis_summary.json",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/annual_members_all500.csv.gz",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/annual_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_age_means.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_carbon_members.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_membership_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_net_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_stage_source_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/member_outcomes_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/member_stage_carbon_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/panel_b_age_area_Mha.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/panel_b_age_group_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/fig02/source_data/stage_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/caption.md",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/README.md",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_actual_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_all_region_curve_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_annual_contrast_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_annual_contrasts_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_birth_four_arms_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_bridge_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_cumulative_endpoint_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_landscape_production_geometry.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_landscape_production_source_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_curves_all500.nc",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_display_curves.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_manifest.json",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_cumulative_net_endpoints.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_landscape_production_geometry.csv.gz",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_stage_net_contrasts.csv.gz",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_component_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_paired_member_cumulative_fluxes_all500.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_source_definitions.json",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_summary.json",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_regional_context_all500.csv.gz",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_regional_context_summary.csv",
+    "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_stage_contrast_summary.csv"
+  ],
+  "files": [
+    {
+      "path": "PAPER_SOURCE_DATA_MANIFEST.json",
+      "bytes": 29114,
+      "sha256": "1103119c8d6cc6f3b096de4775f1d481a9d616733471f34214e95ed5edf665c7"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/PLAN.json",
+      "bytes": 13965,
+      "sha256": "7e5c7e398e3875ebb852b0c61f50e03f6ab78296bd94201f8f27c2dae22d5254"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/analysis_source_used.py",
+      "bytes": 12564,
+      "sha256": "e13974a15cb2ae7a1b3c9d010ba322c618c4f1c6b278bbc4853db0e62d642d1c"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/arm_members_all500.csv",
+      "bytes": 1017271,
+      "sha256": "ca120d5b05ef5f635bb9d319f4a534cbf7967474e2f39b842734ebcac45f347f"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/condition_sensitivity_summary.csv",
+      "bytes": 104250,
+      "sha256": "76f2966def5ed70a8f51664d782d6ce2e7276c357ef8b470b51c165a6c763ec6"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/member_establishment_contrasts_all500.csv",
+      "bytes": 1156697,
+      "sha256": "6ac1d28fa54a8a31ce3cdc2ab6527eccadaade2f1db447648d693233adc7c8b1"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/source_annual_establishment_all500.nc",
+      "bytes": 8057241,
+      "sha256": "dd0f54380c290f1bf48b7e670a9e38742ded20f5269bdc8ef9b19dbaf89ddeef"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/analysis/summary.json",
+      "bytes": 253885,
+      "sha256": "a2af7fe888384c6f8a575cb3a54b1c07b8491415121742380b852dc85675033a"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/PLAN.json",
+      "bytes": 20252,
+      "sha256": "0fdf7bf62dfb296d25e0317e15543de62587d9738942da86ed2718b0da84ff4c"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/analysis_source_used.py",
+      "bytes": 13162,
+      "sha256": "22f133f425c404df85bc2c1ab3cbe72cffd81803c155cfe641c8997c48d23cd2"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/arm_members_all500.csv",
+      "bytes": 1286238,
+      "sha256": "f26c77b406f693fb7e39fe140ef63afbc10e4a75482dd639f145856eb597094e"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/condition_rate_summary.csv",
+      "bytes": 162388,
+      "sha256": "04ff514d651a976ebfabdcf0819ab25abaee3aae1521fc54aea6d607536baaa1"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/member_rate_contrasts_all500.csv",
+      "bytes": 1709078,
+      "sha256": "799c2ec0a74dea1982da54d3184b1ed9ed6ff3895c18cf41f03140cfdd841b0c"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/source_annual_rate_conditions_all500.nc",
+      "bytes": 10059153,
+      "sha256": "ffe4fe09c226338700f174846000ec3d0b5b7e222ed39333b8b6be0d65dcd0f2"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/analysis/summary.json",
+      "bytes": 384902,
+      "sha256": "324a39e06e8aab211bb8ff2ffefea4ba1f82dd6cd71902b8477e9e8454e21c6a"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/source_masks.json",
+      "bytes": 41298,
+      "sha256": "d1a3ffa10747a0d26a9ca5e74bd9efcffcf50e4f13f90fd4401fc7aaa8902154"
+    },
+    {
+      "path": "outputs/age_module/establishment_response_sensitivity/source_masks.json",
+      "bytes": 41430,
+      "sha256": "133536e951c928ee510ba948213ac9675c5ee6d23b6499f7f6db842f94aa2445"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/caption.md",
+      "bytes": 1665,
+      "sha256": "ef243abf1a202586c754fd68ea214ae5cb3dd8f961e1c70c0fa95de2151476ca"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/README.md",
+      "bytes": 3595,
+      "sha256": "29a4be6501bde578e79676ddc12da0c0cdec86d50ad2d78a9d1c110d5a5963d5"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/annual_age_area_contrast.csv.gz",
+      "bytes": 180109,
+      "sha256": "e8b636e141a9cf409daa195441b7d0acdc23e57955baedbdd13e1d24965532b3"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/condition_retention_summary.csv",
+      "bytes": 93919,
+      "sha256": "9200d2e246d20e3c2fcdcc14dbde8c00a4489b14c8d304dca699e49ab3c32dc3"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/member_retention_outcomes_all500.csv",
+      "bytes": 7192248,
+      "sha256": "35ce301b39f3f065fd36475bfedbf99684afe7c939568e5eafa6c36c92d15a2a"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/return_state_transitions.csv",
+      "bytes": 3066,
+      "sha256": "786580949666177c4a80803e6484b4f958e4d051eea75777a7b95eaa0e66fc68"
+    },
+    {
+      "path": "outputs/age_module/land_supply_limited_young_retention/figures/retention_candidate/source_data/summary.json",
+      "bytes": 40314,
+      "sha256": "cf269d308db2198edead5b18209716f79bfa988852a2f8af9d824f9bddd0d63b"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/analysis_source_used.py",
+      "bytes": 17506,
+      "sha256": "6e60ca171cb04d2a4a5f82cc4e9c308889fc0aaebf7ca163d18ca66757eee72c"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/annual_members_all500.csv.gz",
+      "bytes": 25827524,
+      "sha256": "8f981e77d67ba3c3175ff42444542180e38d38ad0e03e7b1327b60cc626bd855"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/annual_summary.csv",
+      "bytes": 705167,
+      "sha256": "740c41f425878f42588f2a0b4b76c7630358e18a571103295ab65f38cd90e9e5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/member_outcomes_all500.csv",
+      "bytes": 1102446,
+      "sha256": "019e9e6ce8378d3724a7a14b4da02adf764a0e4f3c1cef1bbefec47834c226c5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/member_stage_carbon_all500.csv",
+      "bytes": 1745502,
+      "sha256": "34b44f7dacd8ae641c6f9a0eaad38a02eb0d1868a2b45ab4053f62f6e4502ac5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/stage_summary.csv",
+      "bytes": 15796,
+      "sha256": "57273eec99145db163f7fdf029db2d0a4a6530edf11c33e55b9dc0a117f12074"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/state_transitions.csv",
+      "bytes": 1998,
+      "sha256": "f8bf67972c21e2abf1af57f2667439cd3fda099609a63e561b90d68b95321c6d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/analysis/core/summary.json",
+      "bytes": 80085,
+      "sha256": "3ec2f58a3e06b4544657c17d58169be039fb063678645fb5c5fae98f63d34af4"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/caption.md",
+      "bytes": 1542,
+      "sha256": "f5e7f329708867c992a776c6cf5b01e127bbe1d03735e5c2536de37c95afb787"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/README.md",
+      "bytes": 1600,
+      "sha256": "0bec87764f0d1e9fc4d694739af7abac5f2af479baa656e44d11c56db81fe8ad"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/architecture_connections.csv",
+      "bytes": 4453,
+      "sha256": "7c6c94a3a515e068c7ff8de3fda1a485f4e6af5653a8f42d3423db2acd5eef05"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/implementation_excerpts.md",
+      "bytes": 55753,
+      "sha256": "23f507d61f3e470ffe5c44d11e8e6fe8923535bbd4646ea4995a56a4674a32a4"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed01_model_architecture/source_data/source_manifest.json",
+      "bytes": 2527,
+      "sha256": "facf11923265f6cdcb8230d8e86adcec4df93c9bca6609868ed024d2549c0b46"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/caption.md",
+      "bytes": 1223,
+      "sha256": "233546af73bd275ee1e8649d0f08cb932f68c25db562d1e03206357b00ed8745"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/README.md",
+      "bytes": 7194,
+      "sha256": "10bad91c0878537272d08527bc33c5c4d0e51ab62723d5efb4abf26d2ddd079e"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/fra2025_reported_2020_with_coverage.csv",
+      "bytes": 14793,
+      "sha256": "c7a5364db40f3950e4dcf641fe4fbffe65b735ffb4e15c82532aae0a20d026fb"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_age_composition_all20.csv",
+      "bytes": 128644,
+      "sha256": "e44a9a86f94724684642fc6e5a876c7ed180288f04ed661d892852163bae2d36"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_native_2020_reduced.nc",
+      "bytes": 592702,
+      "sha256": "260ab29aa10df12bb09dfef749754c2ce50b34f065b495d309ab5d9816258c61"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/gami_regional_members_all20.csv",
+      "bytes": 18494,
+      "sha256": "a8f591529c4470d8f3fa4872a7b8cb557a5e80f6e181dd4fd2731a351dee8fa3"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/manifest.json",
+      "bytes": 8835,
+      "sha256": "351a7fa55a04049506e0fa1406392c0b4080133d40408ca6a20d7dceeb1d9c7f"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/model_age_composition_all500.csv.gz",
+      "bytes": 229939,
+      "sha256": "e12f59ea2f7f7aa5ff2c3501ed965be3c46e530559a43a908b6300fe7e3a563b"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/model_regional_members_all500.csv",
+      "bytes": 763965,
+      "sha256": "5ef65a52c41d5a2c01f52d3f1047f796b98ccc3dfd03a1fbae5bfac48dd5811f"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/regional_display_statistics.csv",
+      "bytes": 11733,
+      "sha256": "2cde14706d11e54714fada586299e654d2c3310067a9809cfc31341460612749"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/regional_map_geometry.nc",
+      "bytes": 201646,
+      "sha256": "ac4fcc8efb7e7410ac41bacba1b01be4ff13ca3c350cac183dab99adc488c957"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed02_forest_observations/source_data/summary.json",
+      "bytes": 44567,
+      "sha256": "e86521efb883754e638c2b0852025b059647c03eaa36e2d622a6c643f03256f7"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/caption.md",
+      "bytes": 1329,
+      "sha256": "c1c1193bf140618f582fc6972b417cf0ff9d2633d8092d85eca4a91d646140b8"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_2022_members_all500.csv",
+      "bytes": 3605596,
+      "sha256": "ea1f2d1055d1bdebb37f4aebf02a9c8a716b9d1f50ffabbb9a3c2fd8c86df5da"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_age_area_summaries.csv",
+      "bytes": 1196595,
+      "sha256": "9fa490487cadd5a937d6e9f39b7d78b8846c414dced079d510a8bc50dd9e3afc"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_annual_summaries.csv",
+      "bytes": 4697985,
+      "sha256": "f0301e397d484e56b28f12a88630f8f896c0933826274083f6b6fdc8514071a5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_selected_year_summaries.csv",
+      "bytes": 99523,
+      "sha256": "144db323863b796026a5af038f93f133f03105a37e2efe1dbcfe95e0e0426534"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/historical_temperature_references_all500.csv",
+      "bytes": 62502,
+      "sha256": "dc40b3ed83be62556b9a15daa788f0504921cff641879e825ba466416eb243a8"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_a_age_area_Gha.csv",
+      "bytes": 22489,
+      "sha256": "394fd3f61da8488a1acf265729c80dd6824df37e15159fe11ab8e1ee594e4f54"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_b_carbon_pool_differences.csv",
+      "bytes": 111362,
+      "sha256": "87aabf6931530c715109f62dc6e3560b780ee5c91b33b8bf81cb4aad5828748a"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panel_c_historical_net_uptake_path.csv",
+      "bytes": 12578,
+      "sha256": "0a3e418efe7d64626bc1a233b85e6ab268aa6257bd25b3a6fb83f0e565912721"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/panels_c_d_2022_members_all500.csv",
+      "bytes": 52051,
+      "sha256": "dafeb3004d9cf9b626a54ceb79b326f0bc75df97e23ea532224aa7a379f9de32"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/source_history_paired_all500.nc",
+      "bytes": 55393666,
+      "sha256": "09ef932aa3f6a53f557d7cb4b271cf0bec3900d47b6fee4888a9d4e2b09f6590"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed03_history_age_response/source_data/summary.json",
+      "bytes": 21993,
+      "sha256": "2f8f4d523ad217182c653f971416608a21dc75380bcdb4ffdb4d9b3ea7e1b5c7"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/caption.md",
+      "bytes": 1222,
+      "sha256": "3da564ef55e3f02ac4a596d3cc84f36156aa01ab2ed77271215ce7930c619fa6"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/README.md",
+      "bytes": 573,
+      "sha256": "d395a160a720268f3562c0de274800aace7b1715fda3daa3df2a78c8cc171cc9"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/analysis_summary.json",
+      "bytes": 80085,
+      "sha256": "3ec2f58a3e06b4544657c17d58169be039fb063678645fb5c5fae98f63d34af4"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/annual_summary.csv",
+      "bytes": 705167,
+      "sha256": "740c41f425878f42588f2a0b4b76c7630358e18a571103295ab65f38cd90e9e5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/density_bin_shares.csv",
+      "bytes": 7698,
+      "sha256": "682a69f936d0cca94302e8758ca541d7700bb5af109324678577743cd76f3a35"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/member_outcomes_all500.csv",
+      "bytes": 1102446,
+      "sha256": "019e9e6ce8378d3724a7a14b4da02adf764a0e4f3c1cef1bbefec47834c226c5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed04_all_pathway_climate/source_data/state_transitions.csv",
+      "bytes": 1998,
+      "sha256": "f8bf67972c21e2abf1af57f2667439cd3fda099609a63e561b90d68b95321c6d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/caption.md",
+      "bytes": 1634,
+      "sha256": "6ec6f12bc9790bced134ee611161ded94979a287f161d50eff1f39b581417b55"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_analysis_summary.json",
+      "bytes": 249629,
+      "sha256": "1ce1e3546dedd2a9d1599c1399266087c58f76c3c93e863423eb7487cb8be3e1"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_display_statistics.json",
+      "bytes": 10659,
+      "sha256": "4081447e6ea64e9ad49144776ad928d623e6fd7ac591c2bcb694d4ff6e45d259"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_event_aligned_growth_summary.csv",
+      "bytes": 27536,
+      "sha256": "8c118cc6b9449a709cc3fb741f0358048ca1bc8cb71394c327b6448fa96a05b1"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_four_arm_members_all500.csv",
+      "bytes": 889342,
+      "sha256": "d6266d04c29096f042b231eaf707265176f6b1c253174a006db45d1ce4536698"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/ed05_birth_source_response/source_data/source_member_contrasts_all500.csv",
+      "bytes": 1145022,
+      "sha256": "3314a6f9d6ba49c0fc6f4b949e7a708ed0d284f5ae763c568ccb14568eb36e0a"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/caption.md",
+      "bytes": 1546,
+      "sha256": "f6e335d4986d2656b67f3f90e8d21601b006f42eb9651bfab9fe0a27f4bd444d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/README.md",
+      "bytes": 502,
+      "sha256": "852fd546c7238de17120d53d58af8e6a04d724014c795030979a11f3d15db0d6"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/analysis_summary.json",
+      "bytes": 80085,
+      "sha256": "3ec2f58a3e06b4544657c17d58169be039fb063678645fb5c5fae98f63d34af4"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/annual_summary.csv",
+      "bytes": 705167,
+      "sha256": "740c41f425878f42588f2a0b4b76c7630358e18a571103295ab65f38cd90e9e5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/density_bin_counts.csv",
+      "bytes": 5341,
+      "sha256": "51fe7c7ca6a4f2f85f9db05d27f7c2b9f97ab6b4947cb6cbeae14e882faa7012"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/member_outcomes_all500.csv",
+      "bytes": 1102446,
+      "sha256": "019e9e6ce8378d3724a7a14b4da02adf764a0e4f3c1cef1bbefec47834c226c5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/state_transitions.csv",
+      "bytes": 1998,
+      "sha256": "f8bf67972c21e2abf1af57f2667439cd3fda099609a63e561b90d68b95321c6d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig01/source_data/target_endpoint_pairs_all500.csv",
+      "bytes": 454396,
+      "sha256": "0c6be7da06d90a819d1af595dc90c8b5b2a6312ce09a2fa985c4253f39623090"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/caption.md",
+      "bytes": 1425,
+      "sha256": "0292c87c84f1590382f9266b9869c0bae5341273b4c3bf5e1705a67194d469fa"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/README.md",
+      "bytes": 1683,
+      "sha256": "aaafb16d6e7fc89793b851c622436889026b86ebf708107a8c9e74c2da231f75"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/actual_age_stages_all500.nc",
+      "bytes": 5579330,
+      "sha256": "b1743a8d0e19d8a2ca493cba02cfeef1ab739547802d34603009e3005f049298"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/analysis_summary.json",
+      "bytes": 80085,
+      "sha256": "3ec2f58a3e06b4544657c17d58169be039fb063678645fb5c5fae98f63d34af4"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/annual_members_all500.csv.gz",
+      "bytes": 25827524,
+      "sha256": "8f981e77d67ba3c3175ff42444542180e38d38ad0e03e7b1327b60cc626bd855"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/annual_summary.csv",
+      "bytes": 705167,
+      "sha256": "740c41f425878f42588f2a0b4b76c7630358e18a571103295ab65f38cd90e9e5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_age_means.csv",
+      "bytes": 5899,
+      "sha256": "649ccf1d3ed23443fc887ac71b26e751d5b7eb751a60380198eade668bfc8211"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_carbon_members.csv",
+      "bytes": 256138,
+      "sha256": "96dcf248b4d61d5c8c7945894a3fb9c4d9728613abba6067ab6a924fc0a13f4b"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_membership_all500.csv",
+      "bytes": 17454,
+      "sha256": "dd497807bbb646cc57df88ed96da3088f02a23cf9c60b3b9fcbd48d15f16d7f3"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_four_stage_net_summary.csv",
+      "bytes": 5588,
+      "sha256": "c281d2d49d8d7612838f6f4bafda8bba9f3b3911f483e9b1a7d054e1a8f2bb2b"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/common_stage_source_manifest.json",
+      "bytes": 702,
+      "sha256": "a899e20cc44833adb148dfe2c151839391b04c692d13408d4e2524cacd7b5775"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/member_outcomes_all500.csv",
+      "bytes": 1102446,
+      "sha256": "019e9e6ce8378d3724a7a14b4da02adf764a0e4f3c1cef1bbefec47834c226c5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/member_stage_carbon_all500.csv",
+      "bytes": 1745502,
+      "sha256": "34b44f7dacd8ae641c6f9a0eaad38a02eb0d1868a2b45ab4053f62f6e4502ac5"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/panel_b_age_area_Mha.csv",
+      "bytes": 1473,
+      "sha256": "6dc6d4a905c15b70540e0e59720ffa6381d3b6968a75d173a4620acfdc93bc32"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/panel_b_age_group_manifest.json",
+      "bytes": 1719,
+      "sha256": "023453a2cf92763220140278e6be17afc4422de46d72a1b29c2e05bc6dd88349"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig02/source_data/stage_summary.csv",
+      "bytes": 15796,
+      "sha256": "57273eec99145db163f7fdf029db2d0a4a6530edf11c33e55b9dc0a117f12074"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/caption.md",
+      "bytes": 1551,
+      "sha256": "b8728b9905b989b345f063c4385d8fc007d4652b35748e96873bfef622a8294d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/README.md",
+      "bytes": 2905,
+      "sha256": "a24eef901b26b23850ccdf5874f6dd7915a354ab5265d6bddddd03addf180e8f"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_actual_manifest.json",
+      "bytes": 2064,
+      "sha256": "ddc7e5aaf76afe253adc6b8a6e58726df05d5fbcfd27031256313547e8260fa6"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_all_region_curve_summary.csv",
+      "bytes": 15159558,
+      "sha256": "06c077476835daaf08b973a4b107bd160545eb96f91b8305777b4f9203958607"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_annual_contrast_summary.csv",
+      "bytes": 538579,
+      "sha256": "e0e2a9914a11122a816450fa685b7b499515ad9ff37a1c162595df81de3134b6"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_annual_contrasts_all500.nc",
+      "bytes": 13891586,
+      "sha256": "42410b57fae70421b86a06e2f03e252881d5054c4c08b1483c9f779a8db45af7"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_birth_four_arms_all500.nc",
+      "bytes": 8058051,
+      "sha256": "7e892daf8b456e3b8f588f35f9f2a041e409f7eb34e5b5daf9225397d254e075"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_bridge_manifest.json",
+      "bytes": 2087,
+      "sha256": "c99b3619cff386086a7ea25444b9811a0f05b4cca0817514d91db84f72ace5ae"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_cumulative_endpoint_summary.csv",
+      "bytes": 7329,
+      "sha256": "fc6c45da12f959b12e6fddf8b399652b29a2aa1cdeea636ff855ab3e4e9bd44d"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_landscape_production_geometry.csv",
+      "bytes": 4580,
+      "sha256": "6126ed4e5c372b44ef86ffc910909a021424359eb9a40848b490529deda6f715"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_landscape_production_source_all500.nc",
+      "bytes": 13121763,
+      "sha256": "6b4de7f7ac2eb1ecf6f20cd58ba9ceba62e61d0a12662df8aadeb200f00cb031"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_curves_all500.nc",
+      "bytes": 43631051,
+      "sha256": "79ca2ed95bd42ef43494b9aeefaac487e977a937db291229ee762e3d9393022b"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_display_curves.csv",
+      "bytes": 73244,
+      "sha256": "3fb3653a9eab2defa597cd71c51daa391b36dd8fa1d5ca25cb2f06266083679e"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_local_manifest.json",
+      "bytes": 2114,
+      "sha256": "73f365981dba089ac3650cc32fedcc7d11631a39c683d31e26490f56a3d393ce"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_cumulative_net_endpoints.csv",
+      "bytes": 657481,
+      "sha256": "73240a0af877544a87baa9a45c5c0cac1ee94a583a7096e2089566b940db45a6"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_landscape_production_geometry.csv.gz",
+      "bytes": 277432,
+      "sha256": "b1fcb8935bd6f9947bc6baab6341f21627eb92d8ef8aeba24af971c1ebfe09d8"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_member_stage_net_contrasts.csv.gz",
+      "bytes": 775493,
+      "sha256": "1e119292d1d14a8410d4a5518724f47d30c9aeb97451a070b37df98256a46f9c"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_component_summary.csv",
+      "bytes": 5184,
+      "sha256": "8b77945dfab20a1d39375b3f3ff526c2b54a51c304eeaa891cfeca13ffbcedc8"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_paired_member_cumulative_fluxes_all500.csv",
+      "bytes": 393618,
+      "sha256": "0fc9edf3fc787e2ea00309901af61b6589ba1feafca3f402c94c2dffbe342f2e"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_source_definitions.json",
+      "bytes": 2507,
+      "sha256": "a33707e2422a570dd9049798fc36365543c42aaf7e1bc52392b479a61a3eb96e"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_production_to_net_summary.json",
+      "bytes": 17964,
+      "sha256": "63313c75e06bf7b4154ab985f164712d370716111ffc1d9ad3c8f82c5cb833f3"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_regional_context_all500.csv.gz",
+      "bytes": 165755,
+      "sha256": "d628162bf2c95ad64f52bc9a653f239bf7722fd2d939fd458a86680e47db76d3"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_regional_context_summary.csv",
+      "bytes": 1137,
+      "sha256": "afbc3aa5231b55c683da2ee64733fa801ddaf93b83cd77b46818744f9bcd73d0"
+    },
+    {
+      "path": "outputs/age_module/main_figure_redesign/figures/fig03_age_mechanism/source_data/source_stage_contrast_summary.csv",
+      "bytes": 28952,
+      "sha256": "6516f96ef2903f708b20a8444ddddce45fbad33b3340a986eafa02ae60c4656d"
+    }
+  ]
+}

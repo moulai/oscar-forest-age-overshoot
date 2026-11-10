@@ -1,0 +1,126 @@
+{
+  "schema": "completed-scientific-family-catalogue-v1",
+  "scientific_configurations": 367,
+  "condition_member_trajectories": 183500,
+  "all_global_futures_end_year": 2099,
+  "source": "Scientific PLANs, execution manifests and per-run reports",
+  "families": [
+    {
+      "family": "basic",
+      "scientific_configurations": 36,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/oscar_origin/ and outputs/age_module/{historical,future}_{concentration,emissions}/",
+      "definition": "Original OSCAR, H0 and H1; 2 modes \u00d7 (history + 5 matched futures). H0/H1 futures inherit their own histories.",
+      "recipe": "model-spinup \u2192 model-histories \u2192 model-matched-on"
+    },
+    {
+      "family": "controlled_restoration",
+      "scientific_configurations": 280,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/restoration_emissions/",
+      "definition": "Five controlled non-land-CO2 backgrounds \u00d728 schedules \u00d7on/off; common H1-2022."
+    },
+    {
+      "family": "matched_future_off",
+      "scientific_configurations": 5,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/future_age_response/",
+      "definition": "Five complete matched CMIP7 futures, common H1-2022; on reused.",
+      "recipe": "model-matched-off"
+    },
+    {
+      "family": "birth_source",
+      "scientific_configurations": 4,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/birth_source_age_response/",
+      "definition": "VL/LN \u00d7existing-only/post2022-only; 00/11 reused.",
+      "recipe": "model-birth-source"
+    },
+    {
+      "family": "source_age_management",
+      "scientific_configurations": 20,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "archive/20261108-source-age-management/",
+      "definition": "Five complete pathways \u00d7on/off \u00d7under10 fixed-request/oldest-first."
+    },
+    {
+      "family": "temperature_compensation",
+      "scientific_configurations": 8,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/temperature_compensation/",
+      "definition": "VL/LN \u00d7two 20-interval timings \u00d710/30 PgC non-land-CO2 perturbation."
+    },
+    {
+      "family": "supply_limited_retention",
+      "scientific_configurations": 8,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/land_supply_limited_young_retention/",
+      "definition": "VL/LN \u00d7four secondary-age protection cutoffs 10/20/30/40; age-on, actual land/wood services can decrease.",
+      "recipe": "model-retention"
+    },
+    {
+      "family": "finite_future_F_response",
+      "scientific_configurations": 2,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/establishment_response_sensitivity/",
+      "definition": "VL/LN future cohorts retain the main W response but receive gF=1; existing-cohort responses and reused 00/10/11 remain unchanged.",
+      "recipe": "model-establishment-f-response"
+    },
+    {
+      "family": "finite_future_k_rate",
+      "scientific_configurations": 4,
+      "status": "formally_complete",
+      "original_members_per_configuration": 500,
+      "canonical_path": "outputs/age_module/establishment_response_sensitivity/k_rate_conditions/",
+      "definition": "VL/LN future W growth rate is shifted by plus or minus one reported marginal SE with the original support and weighting; existing W and all F remain unchanged. Separate conditional settings, not confidence bounds.",
+      "recipe": "model-establishment-k-rate"
+    }
+  ],
+  "additional_material": [
+    {
+      "family": "common_dynamic_spinup",
+      "scientific_configuration_increment": 0,
+      "path": "outputs/age_module/spinup"
+    },
+    {
+      "family": "VL_process_diagnostics",
+      "scientific_configuration_increment": 0,
+      "trajectories": 1000,
+      "path": "outputs/age_module/restoration_emissions/analysis/age_peak_mechanism_v1"
+    },
+    {
+      "family": "five_pathway_age_on_process_diagnostics",
+      "scientific_configuration_increment": 0,
+      "trajectories": 2500,
+      "path": "outputs/age_module/main_figure_redesign/diagnostic_replay"
+    },
+    {
+      "family": "local_idealized",
+      "global_scientific_configuration_increment": 0,
+      "local_configurations": 4,
+      "regions": 11,
+      "original_members": 500,
+      "relative_age_years": [
+        0,
+        100
+      ],
+      "path": "outputs/age_module/main_figure_redesign/idealized"
+    },
+    {
+      "family": "strict_request_young_retention",
+      "global_scientific_configuration_increment": 0,
+      "area_only_cases": 8,
+      "status": "area_infeasible_no_coupled_climate",
+      "path": "outputs/age_module/young_forest_retention"
+    }
+  ],
+  "recipe_scope": "Named public recipes cover the experiments supporting the paper. Other listed families describe additional scientific experiments."
+}

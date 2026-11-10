@@ -1,0 +1,11 @@
+# Protection of young secondary forest under supply-limited land requests
+
+Eight experiments combine matched Very Low and Low-to-Negative drivers with protection below 10, 20, 30 or 40 actual years. They retain age-dependent production, the common complete end-2022 H1 emissions-driven state and all 500 original joint-parameter members. Native integration uses float64, imex and two substeps per year through 2099.
+
+For every region, year and nonforest source class, the original outgoing gross requests share one executed fraction, `min(1, opening source area / sum of same-source requests)`. The opening area excludes the current year's incoming land. All destinations and event harvest from that source are scaled together. This explicitly allows changes in land services, including establishment of new forest.
+
+The original secondary conversion and standing-harvest proposals are formed on the current state after reserving conversion. Proposed secondary parcels below the protection age are cancelled without replacement from older forest, primary forest or another region. A stand becomes eligible when it reaches the age limit. Primary forest remains unaged, and its original activity is not increased. Mortality, fire, production, carbon routing and climate equations operate normally. Standing harvest retains forest area and birth time; its footprint differs from deforestation or establishment of a new cohort.
+
+Actual selected parcels determine source exits, destination entries and transfers among living, debris, soil and product pools. Actual native biome area feeds the land model. Original wood-carbon requests, actual delivery and unmet demand are recorded separately. The scenario therefore has changed land and wood services; it does not estimate equal-service mitigation, an economically optimal age limit or a pure production-age effect.
+
+The scientific root is `outputs/age_module/land_supply_limited_young_retention/`. Each condition supplies annual summaries, final state, parameters, detailed age diagnostics and a scientific report. Nonforest request, executed and unmet areas are retained by event; forest area, living carbon, NPP, true births, conversion and standing-harvest diagnostics retain their stated annual support. Model and analysis commands are in `reproduction/commands.json` under `model-retention` and `paper-analyses`.

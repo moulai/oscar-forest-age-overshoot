@@ -1,0 +1,7 @@
+# Robinson v1 inputs for conditional k sensitivity
+
+These unmodified inputs are from Robinson et al., *Protect young secondary forests for optimum carbon removal* (2025), doi:10.1038/s41558-025-02355-5. The fixed data record is Zenodo version 1, doi:10.5281/zenodo.15090826, published 26 March 2025, CC BY 4.0. `source_manifest.json` records each official URL, provider MD5 and verified file size. GeoTIFFs are excluded from Git and remain in this project.
+
+`cr_k_error.tif` contains the marginal standard error of fitted k from nonlinear least squares. It is not a joint parameter/curve distribution or an uncertainty range for whole-plant NPP. The source ReadMe is retained as `ReadMe.md` without changing its wording. The study keeps its existing m=2/3 (q=3) convention, following the paper and fixed author v1.0 fitting code; this preparation does not treat the ReadMe's differing notation as a sensitivity.
+
+The accompanying `inputs/robinson_k_error_support/forest850_region_weights.nc` is a project-local copy of the unchanged original LUH850 forest-area and regional support. Coverage is reduced with `python -u workflows/prepare_robinson_k_error_support.py --phase coverage`. The result is `outputs/01_prepared_data/robinson_k_error_support_v1/summary.json` and `regional_coverage.csv`. Missing/negative standard errors and nonpositive k-SE are reported separately with forest-area and recoverable-biomass-capacity weights. Nothing is clipped, filled or replaced. No perturbed curve or model experiment is generated in this stage.
